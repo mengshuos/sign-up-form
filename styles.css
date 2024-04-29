@@ -1,14 +1,7 @@
 body {
-    height: 100%;
-    color: white;
-}
-
-.background {
-    
     margin: 0;
     padding: 0;
     height: 100vh;
-    
     display: flex;
     }
 
@@ -22,9 +15,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    color: white;
 }
 
-.container {
+.container {    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,10 +31,77 @@ body {
     width: 18%;
 }
 
+.logo-text {
+    font-size: 9vh;
+}
 a {
     color: inherit;
 }
 
 .right-side {
     flex: 3 1 67vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+}
+
+.text, .form, .interactive {
+    padding-left: 3vw;
+    padding-right: 18%;
+    box-shadow: 0px 5px rgba(105, 105, 105, 0.151);
+}
+
+.text {
+    background-color: rgba(241, 231, 198, 0.623);
+    padding-top: 10vh;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label, input {
+    display: block;
+    font-size: 2vh;
+}
+
+input {
+    width: 15vw;
+    border-style: solid;
+    border-color: #E5E7EB;
+    box-shadow: none;
+    padding: 0.6vh 0.5vw;
+    margin-top: 0.3vh;
+}
+
+.question  {
+    padding: 1vh 6vw 1vh 0;
+    margin-bottom: 2vh;
+}
+
+.interactive {
+    padding-top: 5vh;
+    background-color: rgba(241, 238, 229, 0.623);
+    flex: 1 1 auto;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    font-size: 2.2vh;
+    font-weight: 700;
+    padding: 2vh 5vw;
+    border-radius: 8px;
+}
+
+.interactive > p {
+    margin: 0;
+    padding-top: 5vh;
+}
+
+.interactive> p > a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
 }
