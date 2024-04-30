@@ -1,8 +1,14 @@
+@font-face {
+    font-family: LemonMilk;
+    src: url(LemonMilk.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
 .left-side {
@@ -33,6 +39,8 @@ body {
 
 .logo-text {
     font-size: 9vh;
+    font-family: LemonMilk;
+    font-weight: 300;
 }
 a {
     color: inherit;
@@ -48,7 +56,7 @@ a {
 .text, .form, .interactive {
     padding-left: 3vw;
     padding-right: 18%;
-    box-shadow: 0px 5px rgba(105, 105, 105, 0.151);
+    box-shadow: 0px 5px 3px rgba(105, 105, 105, 0.151);
 }
 
 .text {
@@ -56,14 +64,19 @@ a {
     padding-top: 10vh;
 }
 
+.form > p, .text {
+    font-weight: 600;
+}
+
 #form {
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #474035;
 }
 
 label, input {
     display: block;
-    font-size: 2vh;
 }
 
 input {
@@ -73,11 +86,23 @@ input {
     box-shadow: none;
     padding: 0.6vh 0.5vw;
     margin-top: 0.3vh;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(54, 178, 216);
+    box-shadow: 0 1px 8px rgba(182, 182, 182, 0.555);
+}
+
+input[type="password"]:invalid {
+    border-color: rgb(223, 52, 52);
 }
 
 .question  {
     padding: 1vh 6vw 1vh 0;
     margin-bottom: 2vh;
+    font-size: 2vh;
 }
 
 .interactive {
@@ -91,17 +116,28 @@ button {
     background-color: #596D48;
     font-size: 2.2vh;
     font-weight: 700;
-    padding: 2vh 5vw;
+    padding: 2vh 3.5vw;
     border-radius: 8px;
+    border: 0;
+    box-shadow: 0 3px 5px rgb(204, 190, 190);
 }
 
 .interactive > p {
     margin: 0;
-    padding-top: 5vh;
+    padding-top: 3.4vh;
+    font-size: 2.5vh;
 }
 
 .interactive> p > a {
     text-decoration: none;
     color: #596D48;
     font-weight: 700;
+}
+
+.hidden {
+    visibility: hidden;
+    font-size: 1.5vh;
+    color: rgb(223, 52, 52);
+    padding-top: 0.2vh;
+    font-weight: 550;
 }

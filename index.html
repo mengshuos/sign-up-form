@@ -43,11 +43,12 @@
                 </div>
                 <div class="question">
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" required>
+                    <div class="hidden">* Passwords do not match</div>
                 </div>
                 <div class="question">
                     <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm_password">
+                    <input type="password" id="confirm_password" required>
                 </div>
             </form>
         </div>
@@ -56,5 +57,6 @@
             <p>Already have an account? <a href=#>Log in</a>.</p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
